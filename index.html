@@ -3,78 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bites Organic - Pure Organic Products for Healthy Living">
     <title>Bites Organic</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Bites Organic</h1>
-            <p>Purely Organic, Naturally Yours</p>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <h1>Bites Organic</h1>
+    </div>
+</header>
+
+<!-- Carousel Section -->
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="images/product3_resized.png" alt="Organic Goat Milk">
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <h2>Welcome to Bites Organic</h2>
-            <p>Discover the pure essence of organic products for a healthier lifestyle.</p>
-            <a href="#products" class="btn">Explore Our Products</a>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products">
-            <h2>Our Products</h2>
-            <div class="product-slider">
-                <div class="product">
-                    <img src="images/goat-milk.jpg" alt="Organic Goat Milk">
-                    <h3>Organic Goat Milk</h3>
-                    <p>Rich in nutrients, fresh, and purely organic.</p>
-                </div>
-                <div class="product">
-                    <img src="images/cow-milk.jpg" alt="Organic A2 Grass Cow Milk">
-                    <h3>Organic A2 Grass Cow Milk</h3>
-                    <p>Wholesome and nutritious A2 milk from grass-fed cows.</p>
-                </div>
-                <div class="product">
-                    <img src="images/peanuts.jpg" alt="Organic Peanuts">
-                    <h3>Organic Peanuts</h3>
-                    <p>Grown with natural rainwater for a healthy snack.</p>
-                </div>
-                <div class="product">
-                    <img src="images/peanut-butter.jpg" alt="Organic Peanut Butter">
-                    <h3>Organic Peanut Butter</h3>
-                    <p>Creamy and delicious, perfect for your breakfast.</p>
-                </div>
-                <div class="product">
-                    <img src="images/peanut-oil.jpg" alt="Organic Peanut Oil">
-                    <h3>Organic Peanut Oil</h3>
-                    <p>Cold-pressed for the purest taste and quality.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <p>Address: 123 Organic Lane, Green City</p>
-            <p>Email: info@bitesorganic.com | Phone: +123-456-7890</p>
-            <p>&copy; 2025 Bites Organic. All Rights Reserved.</p>
+        <div class="carousel-slide">
+            <img src="images/product3_resized.webp" alt="Organic A2 Grass Cow Milk">
         </div>
-    </footer>
+        <div class="carousel-slide">
+            <img src="images/product2_resized.png" alt="Organic Peanuts">
+        </div>
+    </div>
+    <div class="carousel-navigation">
+        <button class="carousel-btn prev" aria-label="Previous Slide">&#10094;</button>
+        <button class="carousel-btn next" aria-label="Next Slide">&#10095;</button>
+    </div>
+    <div class="carousel-dots"></div>
+</section>
 
-    <script src="script.js"></script>
+<!-- Product Descriptions Section -->
+<section class="products">
+    <div class="product">
+        <img src="images/goat_milk.jpg" alt="Organic Goat Milk">
+        <h2>Organic Goat Milk</h2>
+        <p>Fresh, nutritious, and chemical-free goat milk sourced from free-range goats.</p>
+    </div>
+    <div class="product">
+        <img src="images/a2_cow_milk.jpg" alt="Organic A2 Grass Cow Milk">
+        <h2>Organic A2 Grass Cow Milk</h2>
+        <p>Pure A2 milk from grass-fed cows, free from harmful chemicals and additives.</p>
+    </div>
+    <div class="product">
+        <img src="images/peanuts.jpg" alt="Organic Peanuts">
+        <h2>Organic Peanuts with Rain Water</h2>
+        <p>Grown using only natural rainwater, ensuring the purest, most flavorful peanuts.</p>
+    </div>
+    <div class="product">
+        <img src="images/peanut_butter.jpg" alt="Organic Peanut Butter">
+        <h2>Organic Peanut Butter</h2>
+        <p>Made from the finest organic peanuts, blended to perfection for a creamy texture.</p>
+    </div>
+    <div class="product">
+        <img src="images/peanut_oil.jpg" alt="Organic Peanut Oil">
+        <h2>Organic Peanut Oil</h2>
+        <p>A healthy, all-natural oil for cooking or skin care, derived from premium peanuts.</p>
+    </div>
+</section>
+
+<!-- Contact Us Form -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="contact-info">
+        <p>Email: contact@bitesorganic.com</p>
+        <p>Address: 123 Organic Lane, Green City</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
