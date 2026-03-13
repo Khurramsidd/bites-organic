@@ -5,83 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bites Organic</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-    <div class="logo">
-        <h1>Bites Organic</h1>
+<!-- Header / Navigation -->
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <span class="logo-mark">B</span>
+            <div class="logo-text">
+                <h1>Bites Organic</h1>
+                <p>Pure Organic Dairy & Nut Products</p>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#products">Products</a>
+            <a href="#why-bites">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
 </header>
 
-<!-- Carousel Section -->
-<section class="carousel">
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="images/product3_resized.png" alt="Organic Goat Milk">
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <h2>Pure, organic goodness in every bite.</h2>
+            <p>Fresh goat milk, A2 grass-fed cow milk, and rainwater-grown peanuts — free from chemicals and crafted with care for your family.</p>
+            <ul class="hero-highlights">
+                <li>100% organic ingredients</li>
+                <li>Free-range, grass-fed sourcing</li>
+                <li>No harmful chemicals or additives</li>
+            </ul>
+            <div class="hero-ctas">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp js-whatsapp-link">
+                    Chat with us on WhatsApp
+                </a>
+                <a href="#products" class="btn btn-secondary">
+                    View our products
+                </a>
+            </div>
         </div>
-        <div class="carousel-slide">
-            <img src="images/product3_resized.webp" alt="Organic A2 Grass Cow Milk">
+        <div class="hero-media">
+            <section class="carousel" aria-label="Featured Bites Organic products">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="images/product3_resized.png" alt="Fresh Organic Goat Milk bottle">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/product3_resized.webp" alt="Organic A2 Grass Cow Milk bottle">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/product2_resized.png" alt="Organic peanuts grown with rainwater">
+                    </div>
+                </div>
+                <div class="carousel-navigation">
+                    <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+                    <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+                </div>
+                <div class="carousel-dots" aria-label="Carousel pagination"></div>
+            </section>
         </div>
-        <div class="carousel-slide">
-            <img src="images/product2_resized.png" alt="Organic Peanuts">
-        </div>
-    </div>
-    <div class="carousel-navigation">
-        <button class="carousel-btn prev" aria-label="Previous Slide">&#10094;</button>
-        <button class="carousel-btn next" aria-label="Next Slide">&#10095;</button>
-    </div>
-    <div class="carousel-dots"></div>
-</section>
-
-<!-- Product Descriptions Section -->
-<section class="products">
-    <div class="product">
-        <img src="images/goat_milk.jpg" alt="Organic Goat Milk">
-        <h2>Organic Goat Milk</h2>
-        <p>Fresh, nutritious, and chemical-free goat milk sourced from free-range goats.</p>
-    </div>
-    <div class="product">
-        <img src="images/a2_cow_milk.jpg" alt="Organic A2 Grass Cow Milk">
-        <h2>Organic A2 Grass Cow Milk</h2>
-        <p>Pure A2 milk from grass-fed cows, free from harmful chemicals and additives.</p>
-    </div>
-    <div class="product">
-        <img src="images/peanuts.jpg" alt="Organic Peanuts">
-        <h2>Organic Peanuts with Rain Water</h2>
-        <p>Grown using only natural rainwater, ensuring the purest, most flavorful peanuts.</p>
-    </div>
-    <div class="product">
-        <img src="images/peanut_butter.jpg" alt="Organic Peanut Butter">
-        <h2>Organic Peanut Butter</h2>
-        <p>Made from the finest organic peanuts, blended to perfection for a creamy texture.</p>
-    </div>
-    <div class="product">
-        <img src="images/peanut_oil.jpg" alt="Organic Peanut Oil">
-        <h2>Organic Peanut Oil</h2>
-        <p>A healthy, all-natural oil for cooking or skin care, derived from premium peanuts.</p>
     </div>
 </section>
 
-<!-- Contact Us Form -->
-<section class="contact">
-    <h2>Contact Us</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+<!-- Key Products Strip -->
+<section class="key-products" id="products">
+    <div class="container">
+        <h2>Our Organic Essentials</h2>
+        <p class="section-intro">Thoughtfully crafted dairy and nut products to bring natural nutrition to your everyday life.</p>
+        <div class="key-products-grid">
+            <article class="key-product-card">
+                <h3>Organic Goat Milk</h3>
+                <p>Fresh, easily digestible milk from free-range goats.</p>
+            </article>
+            <article class="key-product-card">
+                <h3>Organic A2 Grass Cow Milk</h3>
+                <p>Pure A2 milk from grass-fed cows, gentle on the stomach.</p>
+            </article>
+            <article class="key-product-card">
+                <h3>Organic Peanuts</h3>
+                <p>Rainwater-irrigated peanuts, rich in natural flavour and nutrients.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Product Grid -->
+<section class="products-grid-section">
+    <div class="container products-grid" aria-label="Bites Organic product range">
+        <article class="product-card">
+            <img src="images/goat_milk.jpg" alt="Glass of Organic Goat Milk">
+            <h3>Organic Goat Milk</h3>
+            <p>Fresh, nutritious, and chemical-free goat milk sourced from free-range goats.</p>
+            <ul>
+                <li>Rich in calcium and essential minerals</li>
+                <li>Traditionally known to be gentle on digestion</li>
+                <li>Delivered fresh from farm to home</li>
+            </ul>
+        </article>
+        <article class="product-card">
+            <img src="images/a2_cow_milk.jpg" alt="Bottle of Organic A2 Grass Cow Milk">
+            <h3>Organic A2 Grass Cow Milk</h3>
+            <p>Pure A2 milk from grass-fed cows, free from harmful chemicals and additives.</p>
+            <ul>
+                <li>Only A2 beta-casein protein</li>
+                <li>Grass-fed, ethically raised cows</li>
+                <li>No antibiotics, no synthetic hormones</li>
+            </ul>
+        </article>
+        <article class="product-card">
+            <img src="images/peanuts.jpg" alt="Organic peanuts grown with rainwater">
+            <h3>Organic Peanuts with Rain Water</h3>
+            <p>Grown using only natural rainwater, ensuring the purest, most flavorful peanuts.</p>
+            <ul>
+                <li>Naturally irrigated fields</li>
+                <li>High in plant-based protein</li>
+                <li>Perfect for snacking and cooking</li>
+            </ul>
+        </article>
+        <article class="product-card">
+            <img src="images/peanut_butter.jpg" alt="Jar of Organic Peanut Butter">
+            <h3>Organic Peanut Butter</h3>
+            <p>Made from the finest organic peanuts, blended to perfection for a creamy texture.</p>
+            <ul>
+                <li>Just peanuts, no hidden ingredients</li>
+                <li>Creamy, naturally sweet flavour</li>
+                <li>Ideal for breakfast, smoothies, and baking</li>
+            </ul>
+        </article>
+        <article class="product-card">
+            <img src="images/peanut_oil.jpg" alt="Bottle of Organic Peanut Oil">
+            <h3>Organic Peanut Oil</h3>
+            <p>A healthy, all-natural oil for cooking or skin care, derived from premium peanuts.</p>
+            <ul>
+                <li>Cold-pressed for maximum nutrition</li>
+                <li>High smoke point for everyday cooking</li>
+                <li>Also suitable for traditional skin care rituals</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<!-- Why Bites Organic -->
+<section class="why-bites" id="why-bites">
+    <div class="container">
+        <h2>Why Bites Organic</h2>
+        <p class="section-intro">We believe real food should be simple, honest, and as close to nature as possible.</p>
+        <div class="why-grid">
+            <div class="why-item">
+                <h3>Truly Organic Sourcing</h3>
+                <p>Our farms follow natural, chemical-free practices so every sip and bite is clean and safe for your family.</p>
+            </div>
+            <div class="why-item">
+                <h3>Grass-Fed & Free-Range</h3>
+                <p>Goats and cows graze freely on open pastures, producing nutrient-rich milk the way nature intended.</p>
+            </div>
+            <div class="why-item">
+                <h3>Rainwater-Irrigated Crops</h3>
+                <p>Our peanuts are grown with natural rainwater, preserving soil health and delivering exceptional flavour.</p>
+            </div>
+            <div class="why-item">
+                <h3>Farm-to-Home Care</h3>
+                <p>From milking to bottling and packaging, we handle every step with care, transparency, and hygiene.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & WhatsApp -->
+<section class="contact" id="contact">
+    <div class="container contact-inner">
+        <div class="contact-text">
+            <h2>Order & support on WhatsApp</h2>
+            <p>Reach us directly on WhatsApp for fresh milk subscriptions, product questions, or bulk and wholesale enquiries.</p>
+            <ul class="hero-highlights">
+                <li>Place or modify your daily milk orders</li>
+                <li>Check availability, pricing, and delivery options</li>
+                <li>Get guidance on choosing the right organic products</li>
+            </ul>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp js-whatsapp-link">
+                Chat with us on WhatsApp
+            </a>
+            <div class="contact-details">
+                <p><strong>WhatsApp:</strong> <span class="contact-phone">+91 00000 00000</span></p>
+                <p><strong>Address:</strong> <span class="contact-address">123 Organic Lane, Green City</span></p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Footer Section -->
 <footer>
-    <div class="contact-info">
-        <p>Email: contact@bitesorganic.com</p>
-        <p>Address: 123 Organic Lane, Green City</p>
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <p>&copy; <span id="year"></span> Bites Organic. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#products">Products</a>
+            <a href="#why-bites">Why Us</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 </footer>
 
+<script src="contact-config.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
