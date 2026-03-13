@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bites Organic</title>
+    <title>Bites Organic – Organic Goat Milk, A2 Cow Milk & Peanuts</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Bites Organic offers fresh organic goat milk, A2 grass-fed cow milk, and rainwater-grown peanuts and nut products from GMF Farm near Talagang, Chakwal, Punjab, Pakistan.">
+    <meta name="keywords" content="Bites Organic, organic goat milk, organic A2 cow milk, organic peanuts, organic peanut butter, organic peanut oil, GMF Farm, Chakwal, Punjab, Pakistan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Bites Organic – Pure Organic Dairy & Nut Products">
+    <meta property="og:description" content="Fresh organic goat milk, A2 grass-fed cow milk, and rainwater-grown peanuts and nut products from GMF Farm near Talagang, Chakwal, Punjab, Pakistan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bitesorganic.com/">
+    <meta property="og:image" content="https://bitesorganic.com/images/product3_resized.png">
+
+    <!-- Favicon / Logo in browser tab -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Organization schema for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bites Organic",
+        "url": "https://bitesorganic.com",
+        "logo": "https://bitesorganic.com/images/favicon.png",
+        "description": "Fresh organic goat milk, A2 grass-fed cow milk, and rainwater-grown peanuts and nut products from GMF Farm near Talagang, Chakwal, Punjab, Pakistan.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "GMF Farm near Talagang, Talagang Tehsil",
+            "addressLocality": "Chakwal District",
+            "addressRegion": "Punjab",
+            "postalCode": "48800",
+            "addressCountry": "PK"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+92-300-4031944",
+            "contactType": "customer service",
+            "areaServed": "PK"
+        }
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +55,13 @@
 <!-- Header / Navigation -->
 <header class="site-header">
     <div class="container header-inner">
-        <div class="logo">
+        <a href="/" class="logo" aria-label="Bites Organic home">
             <span class="logo-mark">B</span>
             <div class="logo-text">
-                <h1>Bites Organic</h1>
+                <span class="logo-title">Bites Organic</span>
                 <p>Pure Organic Dairy & Nut Products</p>
             </div>
-        </div>
+        </a>
         <nav class="main-nav" aria-label="Main navigation">
             <a href="#products">Products</a>
             <a href="#why-bites">Why Us</a>
@@ -32,7 +74,7 @@
 <section class="hero">
     <div class="container hero-inner">
         <div class="hero-content">
-            <h2>Pure, organic goodness in every bite.</h2>
+            <h1>Pure, organic goodness in every bite.</h1>
             <p>Fresh goat milk, A2 grass-fed cow milk, and rainwater-grown peanuts — free from chemicals and crafted with care for your family.</p>
             <ul class="hero-highlights">
                 <li>100% organic ingredients</li>

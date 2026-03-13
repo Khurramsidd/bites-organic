@@ -127,9 +127,18 @@ section {
     color: #ffffff;
 }
 
+.logo-title,
 .logo-text h1 {
+    font-family: "Playfair Display", "Times New Roman", serif;
     font-size: 1.25rem;
+    font-weight: 700;
+    color: #163021;
     margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-text p {
@@ -549,6 +558,26 @@ footer {
 
 /* Responsive */
 @media (max-width: 960px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+    }
+
+    .main-nav a {
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        background-color: rgba(243, 244, 246, 0.9);
+        white-space: nowrap;
+    }
+
     .hero-inner {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -579,18 +608,6 @@ footer {
 }
 
 @media (max-width: 720px) {
-    .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-    }
-
-    .main-nav {
-        width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-
     .hero-content h2 {
         font-size: 2rem;
     }
