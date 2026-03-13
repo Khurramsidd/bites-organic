@@ -3,9 +3,9 @@
 
 window.BITES_CONTACT_CONFIG = {
     // Full WhatsApp number with country code, numbers only
-    whatsappNumber: "+923365827427", // e.g. 911234567890
+    whatsappNumber: "+923004031944", // e.g. 911234567890
     // How the number should be displayed in the UI
-    phoneNumberDisplay: "+92 3365837427",
+    phoneNumberDisplay: "+92 300 4031944",
     // Prefilled message when a user opens WhatsApp chat
     defaultMessage: "Hello Bites Organic, I would like to know more about your organic products.",
     // Physical address shown in the contact section and footer if needed
