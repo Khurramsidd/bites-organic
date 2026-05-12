@@ -112,38 +112,13 @@ section {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-}
-
-.logo-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    background: radial-gradient(circle at 30% 20%, #fef9c3, #38a169);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.logo-title,
-.logo-text h1 {
-    font-family: "Playfair Display", "Times New Roman", serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #163021;
-    margin: 0;
-}
-
-.logo a {
     text-decoration: none;
-    color: inherit;
 }
 
-.logo-text p {
-    font-size: 0.8rem;
-    margin: 0.15rem 0 0;
+.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
 }
 
 .main-nav {
