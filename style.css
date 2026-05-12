@@ -341,6 +341,7 @@ section {
 }
 
 .product-card img {
+    width: 100%;
     height: 210px;
     object-fit: cover;
 }
@@ -377,6 +378,13 @@ section {
     height: 6px;
     border-radius: 999px;
     background-color: #2f855a;
+}
+
+.product-card-link {
+    margin: 0 1.25rem 1.25rem;
+    align-self: flex-start;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
 }
 
 /* Why Bites */
@@ -531,6 +539,130 @@ footer {
     color: #f9fafb;
 }
 
+/* Product detail page */
+.product-hero {
+    width: 100%;
+    line-height: 0;
+}
+
+.product-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-detail {
+    padding: 3rem 0 4rem;
+}
+
+.product-detail h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.product-tagline {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2f855a;
+    margin-bottom: 1.5rem;
+}
+
+.product-description {
+    font-size: 1rem;
+    max-width: 640px;
+    line-height: 1.7;
+}
+
+.product-benefits {
+    margin-top: 2rem;
+}
+
+.product-benefits h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-benefits ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.product-benefits ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: #2f855a;
+}
+
+.product-early-cta {
+    margin: 1.25rem 0 2rem;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+}
+
+.product-order-section {
+    background: linear-gradient(135deg, #ecfdf3 0%, #f0fdf4 50%, #fefce8 100%);
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.product-order-inner h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-order-inner p {
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+}
+
+.product-order-inner .btn-whatsapp {
+    font-size: 1.05rem;
+    padding: 0.85rem 2.2rem;
+}
+
+.product-back-link {
+    margin-top: 1rem;
+}
+
+/* Floating WhatsApp button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background-color: #25d366;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
 /* Responsive */
 @media (max-width: 960px) {
     .header-inner {
@@ -580,6 +712,7 @@ footer {
     .contact-inner {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 720px) {
@@ -614,5 +747,9 @@ footer {
     .hero-ctas {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .product-detail h1 {
+        font-size: 1.8rem;
     }
 }

@@ -89,10 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
         if (whatsappLinks.length && whatsappNumber) {
             const base = `https://wa.me/${encodeURIComponent(whatsappNumber)}`;
-            const url = defaultMessage
-                ? `${base}?text=${encodeURIComponent(defaultMessage)}`
-                : base;
             whatsappLinks.forEach(link => {
+                const msg = link.dataset.message || defaultMessage;
+                const url = msg
+                    ? `${base}?text=${encodeURIComponent(msg)}`
+                    : base;
                 link.setAttribute('href', url);
             });
         }
