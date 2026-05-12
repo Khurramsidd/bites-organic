@@ -88,9 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update WhatsApp links (hero + contact section)
         const whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
         if (whatsappLinks.length && whatsappNumber) {
-            const base = `https://wa.me/${encodeURIComponent(whatsappNumber)}`;
             whatsappLinks.forEach(link => {
+                const phone = link.dataset.phone || whatsappNumber;
                 const msg = link.dataset.message || defaultMessage;
+                const base = `https://wa.me/${encodeURIComponent(phone)}`;
                 const url = msg
                     ? `${base}?text=${encodeURIComponent(msg)}`
                     : base;
